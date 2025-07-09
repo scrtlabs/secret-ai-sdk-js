@@ -1,0 +1,71 @@
+{
+  "name": "secret-ai-sdk-js",
+  "version": "0.1.0",
+  "description": "Secret AI Confidential VM SDK for TypeScript/Node.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "clean": "rm -rf dist",
+    "dev": "ts-node src/index.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "secret-network",
+    "confidential-ai",
+    "blockchain",
+    "privacy",
+    "llm",
+    "ai",
+    "typescript"
+  ],
+  "author": {
+    "name": "Alex H",
+    "email": "alexh@scrtlabs.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "secretjs": "^1.15.1",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "bip39": "^3.1.0",
+    "secp256k1": "^5.0.0",
+    "bech32": "^2.0.0",
+    "@langchain/core": "^0.2.31",
+    "@langchain/ollama": "^0.1.0",
+    "ollama": "^0.5.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/jest": "^29.5.0",
+    "@types/bip39": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.3.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scrtlabs/secret-ai-sdk-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scrtlabs/secret-ai-sdk-js/issues"
+  },
+  "homepage": "https://github.com/scrtlabs/secret-ai-sdk-js#readme"
+} 
