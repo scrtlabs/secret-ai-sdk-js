@@ -44,13 +44,14 @@ const KNOWN_WIDTH = 60;
  * - Clean word-wrapped streaming output
  */
 class SecretStreamingHandler extends BaseCallbackHandler {
+  name = "SecretStreamingHandler";
   private width: number;
   private buffer: string = "";
   private currentLine: string = "";
   private currentLineLength: number = 0;
   private inThinkingMode: boolean = false;
-  private readonly cyan: string = "\033[36m";
-  private readonly reset: string = "\033[0m";
+  private readonly cyan: string = "\x1b[36m";
+  private readonly reset: string = "\x1b[0m";
   private readonly brainEmoji: string = "🧠";
 
   constructor(width: number = KNOWN_WIDTH) {
